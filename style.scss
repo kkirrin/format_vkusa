@@ -1,5 +1,8 @@
 /* Импорт кастомных стилей для компонентов */
 @import './css/blocks/title.scss';
+@import './css/blocks/mixin.scss';
+@import './css/blocks/menu.scss';
+@import './css/blocks/button-menu.scss';
 
 @tailwind base;
 @tailwind components;
