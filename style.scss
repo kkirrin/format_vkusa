@@ -6,17 +6,25 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Bebas Neue';
-  src: url('./fonts/BebasNeueBold.woff2');
-  font-weight: 700;
+  font-family: 'Roboto';
+  src: url('/public/fonts/Roboto-Regular.ttf');
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Bebas Neue';
-  src: url('./fonts/BebasNeueRegular.woff2');
-  font-weight: 400;
+  font-family: 'Roboto';
+  src: url('/public/fonts/Roboto-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/public/fonts/Roboto-Bold.ttf');
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
@@ -27,7 +35,7 @@
   }
 
   body {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #262626;
     font-weight: 400;
   }
@@ -40,7 +48,7 @@
 }
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Roboto, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
