@@ -1,0 +1,83 @@
+/* Импорт кастомных стилей для компонентов */
+@import './css/blocks/title.scss';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('./fonts/BebasNeueBold.woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('./fonts/BebasNeueRegular.woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #262626;
+    font-weight: 400;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-[1480px]
+  }
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Переменные */
+  --white: #ffffff;
+  --default-black: #363232;
+  --dark-blue: #152033;
+  --blue: #192436;
+}
+
+/* Прочие классы */
+.lock {
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
