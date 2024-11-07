@@ -1,12 +1,9 @@
 export const initModal = () => {
-    const modalBtn = document.querySelector('.btn_lk');
-    const modalLk = document.querySelector('.modal_lk');
+    const modalBtn = document.querySelector('.modal_btn_lk');
+    const modalLk = document.querySelector('.modal__content_lk');
 
-    const modalBtnCart = document.querySelector('.btn_cart');
-    const modalCart = document.querySelector('.modal_cart');
-
-    console.log(modalBtn)
-    console.log(modalCart)
+    const modalBtnCart = document.querySelector('.modal_btn_cart');
+    const modalCart = document.querySelector('.modal__content_cart');
 
     modalBtn.addEventListener('click', () => {
         modalLk.classList.toggle('is-open');
