@@ -1,5 +1,3 @@
-export const initSmoothScroll = () => {
-
 
 ! function () {
     var e, t, o, n, r = {
@@ -324,4 +322,3 @@ export const initSmoothScroll = () => {
     })) : "object" == typeof exports ? module.exports = ne : window.SmoothScroll = ne
     }();
 
-    }

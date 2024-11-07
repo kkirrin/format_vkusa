@@ -1,15 +1,29 @@
 export const initModal = () => {
-    const modalBtn = document.querySelector('.modal_btn_lk');
-    const modalLk = document.querySelector('.modal__content_lk');
+ const modalButtons = document.querySelectorAll('.modal_btn');
+ const body = document.querySelector('body');
 
-    const modalBtnCart = document.querySelector('.modal_btn_cart');
-    const modalCart = document.querySelector('.modal__content_cart');
+ modalButtons.forEach(btn => {
+  btn.addEventListener('click', (e) => {
+   const currentBtn = e.currentTarget;
+   const modalWrapper = currentBtn.closest('.modal_wrapper');
+   const modalContent = modalWrapper.querySelector('.modal_content');
 
-    modalBtn.addEventListener('click', () => {
-        modalLk.classList.toggle('is-open');
-    });
+   if (modalContent.classList.contains('is-active')) {
+    return;
+   } else {
+    modalContent.classList.add('is-active');
+    body.classList.add('masked');
+   }
+  });
+ });
 
-    modalBtnCart.addEventListener('click', () => {
-        modalCart.classList.toggle('is-open');
-    });
-}
+ document.addEventListener('click', (event) => {
+  if (!event.target.closest('.modal') && !event.target.closest('.modal_btn')) {
+   const modalContent = document.querySelectorAll('.modal_content');
+   modalContent.forEach((content) => {
+    content.classList.remove('is-active');
+   });
+   document.body.classList.remove('masked');
+  }
+ });
+};

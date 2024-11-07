@@ -111,3 +111,66 @@ header > div:first-child::before {
   background-color: var(--light-gray); 
   z-index: -1;
 }
+
+
+body {
+  transition: all 0.5s ease-in-out;
+}
+
+body.masked {
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  z-index: 100;
+}
+
+
+.nav-links ul li ul.sub-menu {
+  position: absolute;
+  opacity: 0;
+  display: block;
+  visibility: hidden;
+  background-color: var(--white);
+  margin-top: 10px;
+  padding-left: 15px;
+  padding: 20px;
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+  transition: all 0.1s ease-in-out;
+
+}
+
+.nav-links ul li {
+  transition: all 0.1s ease-in-out;
+}
+
+// .nav-links ul li.first_item:hover {
+//   color: var(--gold);
+// }
+
+.nav-links ul li.first_item:hover ul.sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+// .nav-links ul li.first_item ul.sub-menu li {
+//   transition: all 0.7s ease-in-out;
+// }
+
+
+
+// main_banner
+
+#main_banner {
+  padding-bottom: 90px;
+}
+
+.swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet {
+  height: 12px;
+  width: 12px;
+  color: var(--light-gray);
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: var(--white);
+}
