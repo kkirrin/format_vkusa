@@ -92,3 +92,18 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+header {
+  position: relative;
+  padding: 20px 20px;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--light-gray); 
+  z-index: -1;
+}

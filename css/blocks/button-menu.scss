@@ -1,5 +1,5 @@
 .btn__menu {
-    --color:  #262626;
+    color: var(--white);
     width: 36px;
     height: 36px;
     padding: 0;
@@ -11,14 +11,14 @@
     cursor: pointer;
     -webkit-appearence: none;
     -webkit-tap-highlight-color: transparent;
-    background-color: #e40604;
+    background-color: var(--default-black);
 
 }
 .btn__menu svg {
-    width: 55px;
-    height: 40px;
-    top: -2px;
-    left: -7px;
+    width: 60px;
+    height: 30px;
+    top:12px;
+    left: 1px;
     stroke: white;
     stroke-width: 3px;
     stroke-linecap: round;
@@ -73,7 +73,7 @@
 
 
 .btn__menu--mobile {
-    --color:  #262626;
+    color:  #262626;
     width: 36px;
     height: 36px;
     padding: 0;
