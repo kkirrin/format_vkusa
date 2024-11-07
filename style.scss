@@ -191,3 +191,14 @@ body.masked {
   background-repeat: no-repeat;
   background-size:auto;
 }
+
+#category-1 {
+  padding: 90px 0;
+  background-color: var(--light-gray);
+
+}
+
+ #category-2, #category-3, #category-4{
+  padding: 0 0 90px 0;
+  background-color: var(--light-gray);
+}
