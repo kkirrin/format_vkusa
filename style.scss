@@ -174,3 +174,15 @@ body.masked {
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: var(--white);
 }
+
+
+#popular {
+  padding-bottom: 110px;
+}
+
+#promotion-section {
+  background-image: url('./public/imgs/popular-banner.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:auto;
+}
