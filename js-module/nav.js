@@ -3,9 +3,10 @@ export const initNav = () => {
     // Меню
     const menu = document.querySelector('.menu');
     const menuButton = document.querySelector('.btn__menu');
-
+    
     const mobileMenu = document.querySelector('.mobile-menu')
     const mobileMenuButton = document.querySelector('.btn__menu--mobile')
+    const mobileMenuCloseButton = document.querySelector('.btn__menu--close');
 
     const mobileMenuLinks = document.querySelectorAll('.mobile-menu a');
     const menuLinks = document.querySelectorAll('.menu a');
@@ -38,6 +39,12 @@ export const initNav = () => {
             body.classList.remove('lock');
         });
     });
+
+    mobileMenuCloseButton.addEventListener('click', (evt) => { 
+        mobileMenuButton.classList.remove('active');
+        mobileMenu.classList.remove('is-active');
+        body.classList.remove('lock');
+    })
 
   
 

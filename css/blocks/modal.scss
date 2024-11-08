@@ -7,14 +7,16 @@
     max-width: 400px;
     width: 100%;
     display: block;
-    opacity: 0;
+    opacity: 1;
     transform: translateX(100%); 
     background-color: var(--white);
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition: transform 0.9s ease, opacity 0.3s ease;
+    z-index: 1000;
+
 }
 
 .modal_content.is-active {
-    opacity: 1;
+
     transform: translateX(0%);
 }
 

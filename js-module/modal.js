@@ -1,6 +1,7 @@
 export const initModal = () => {
  const modalButtons = document.querySelectorAll('.modal_btn');
- const body = document.querySelector('body');
+    const body = document.querySelector('body');
+    const mask = body.querySelector('.mask');
 
  modalButtons.forEach(btn => {
   btn.addEventListener('click', (e) => {
@@ -12,7 +13,9 @@ export const initModal = () => {
     return;
    } else {
     modalContent.classList.add('is-active');
-    body.classList.add('masked');
+       // body.classList.add('masked');
+       mask.classList.add('is-active');
+       
    }
   });
  });
@@ -23,7 +26,9 @@ export const initModal = () => {
    modalContent.forEach((content) => {
     content.classList.remove('is-active');
    });
-   document.body.classList.remove('masked');
+//    document.body.classList.remove('masked');
+       mask.classList.remove('is-active');
+
   }
  });
 };

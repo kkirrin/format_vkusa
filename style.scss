@@ -4,6 +4,7 @@
 @import './css/blocks/menu.scss';
 @import './css/blocks/button-menu.scss';
 @import './css/blocks/modal.scss';
+@import './css/blocks/popup.scss';
 
 @tailwind base;
 @tailwind components;
@@ -70,6 +71,7 @@
   --default-black: #262626;
   --gold: #E4C47E;
   --light-gray: #f1f1f1;
+  --dark-gray: #8F8F8F;
 }
 
 /* Прочие классы */
@@ -137,6 +139,7 @@ body.masked {
   -moz-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
   box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
   transition: all 0.1s ease-in-out;
+  z-index: 100;
 
 }
 
@@ -176,6 +179,27 @@ body.masked {
 }
 
 
+.mask {
+  background-color: rgba(0, 0, 0, 0.40);
+  transition: opacity .1s ease;
+  position: fixed;
+  right: -2000px;
+  top: 0;
+  padding: 20px;
+  width: 100%;
+  height: 100vh;
+  transition: all 1s ease-in-out;
+  z-index: 100;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+
+
+.mask.is-active {
+  right: 0;
+}
+
+
 #popular {
   padding-bottom: 110px;
 }
@@ -201,4 +225,12 @@ body.masked {
  #category-2, #category-3, #category-4{
   padding: 0 0 90px 0;
   background-color: var(--light-gray);
+}
+
+.lock {
+  overflow: hidden;
+}
+
+.lock-padding {
+    padding: 0 !important;
 }

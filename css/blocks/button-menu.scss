@@ -30,13 +30,10 @@
 
 .btn__menu.active {
     transition: 1s ease;
-    background-color: #fcbc40;
 }
 
 .btn__menu.active svg {
     transition: 1s ease;
-    stroke-dasharray: #fcbc40;
-    stroke-dashoffset: #fcbc40;
 }
 .btn__menu svg path {
     transition: stroke-dasharray var(--duration, 0.85s) var(--easing, ease) var(--delay, 0s), stroke-dashoffset var(--duration, 0.85s) var(--easing, ease) var(--delay, 0s);
@@ -73,7 +70,7 @@
 
 
 .btn__menu--mobile {
-    color:  #262626;
+    color:  var(--white);
     width: 36px;
     height: 36px;
     padding: 0;
@@ -89,14 +86,15 @@
 
 .btn__menu--mobile.active {
     transition: 1s ease;
-    background-color: #fcbc40;
+
 }
 .btn__menu--mobile svg {
-    width: 64px;
+    width: 44px;
     height: 48px;
     top: -6px;
-    left: -14px;
-    stroke: var(--default-black);
+    left: -11px;
+    background-color: var(--default-black);
+    stroke: var(--white);
     stroke-width: 4px;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -135,3 +133,5 @@
 .btn__menu--mobile.active svg path:nth-child(3) {
     --offset: 58px;
 }
+
+

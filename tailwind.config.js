@@ -18,6 +18,7 @@ module.exports = {
       defaultBlack: '#262626',
       gold: '#E4C47E',
       lightGray: '#f1f1f1',
+      darkGray: '#8F8F8F',
 
       // ---------------------------------
       'default-black': '#000000',
