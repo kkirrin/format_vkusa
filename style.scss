@@ -5,6 +5,7 @@
 @import './css/blocks/button-menu.scss';
 @import './css/blocks/modal.scss';
 @import './css/blocks/popup.scss';
+@import './css/blocks/tabs';
 
 @tailwind base;
 @tailwind components;
@@ -37,6 +38,12 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: var(--gold) var(--light-gray);
+    font-family: 'Involve';
+    overflow-x: hidden;
+    margin-top: 0px !important;
   }
 
   body {
@@ -122,7 +129,7 @@ body {
 body.masked {
   background-color: rgba(0, 0, 0, 0.5);
   overflow: hidden;
-  z-index: 100;
+  z-index: 1001;
 }
 
 
@@ -227,10 +234,60 @@ body.masked {
   background-color: var(--light-gray);
 }
 
+#about  {
+  padding-bottom: 70px;
+}
+
+#order {
+  padding-bottom: 110px;
+}
+
+#shops {
+  padding-bottom: 110px;
+}
+
 .lock {
   overflow: hidden;
 }
 
 .lock-padding {
     padding: 0 !important;
+}
+
+
+.header-fix {
+  background: rgba(255, 255, 255, 1) !important;
+  box-shadow: 0 3px 6px rgba(235, 235, 235, 0.16), 0 3px 6px rgba(0, 0, 0, .23) !important;
+  padding-bottom: 10px;
+}
+
+header .able {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+
+}
+
+header .able.disabled {
+  opacity: 0;
+  display: none;
+
+}
+
+
+.table {
+	width: 100%;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #dddddd;
+	border-collapse: collapse; 
+}
+.table th {
+	font-weight: bold;
+	padding: 20px;
+	// background: #efefef;
+	border-bottom: 1px solid #dddddd;
+  text-align: start;
+}
+.table td {
+	border-bottom: 1px solid #dddddd;
+	padding: 20px;
 }

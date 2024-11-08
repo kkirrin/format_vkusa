@@ -3,21 +3,22 @@
     height: 100vh;
     padding: 30px;
     top: 0;
-    right: 0;
+    right: -100%;
     max-width: 400px;
     width: 100%;
     display: block;
     opacity: 1;
-    transform: translateX(100%); 
+    // transform: translateX(100%); 
     background-color: var(--white);
-    transition: transform 0.9s ease, opacity 0.3s ease;
+    transition: right 0.9s ease, opacity 0.3s ease;
     z-index: 1000;
 
 }
 
 .modal_content.is-active {
 
-    transform: translateX(0%);
+    // transform: translateX(0%);
+    right: 0;
 }
 
 .btn_close {

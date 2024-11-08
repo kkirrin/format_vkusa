@@ -1,4 +1,4 @@
-export const initScrollAnimation = () => {
+
     var ScrollOut = function () {
         "use strict"
         function S(e, t, n) { return e < t ? t : n < e ? n : e } function T(e) { return +(0 < e) - +(e < 0) } var q, t = {}
@@ -29,4 +29,3 @@ export const initScrollAnimation = () => {
     }()
 
     ScrollOut();
-}
