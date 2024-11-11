@@ -217,7 +217,7 @@ body.masked {
 
 #promotion {
   padding: 90px 0 110px 0;
-  background-image: url('./public/imgs/popular-banner.png');
+  background-image: url('/imgs/popular-banner.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size:auto;
@@ -305,4 +305,18 @@ header .able.disabled {
 
 .hover__img--wrapper {
   overflow: hidden;
+}
+
+
+.line__down {
+  position: relative;
+}
+
+.line__down::before {
+  content: '';
+  position: absolute;
+  width: -webkit-fill-available;
+  height: 1px;
+  background-color: var(--light-gray);
+  bottom: -20px;
 }
